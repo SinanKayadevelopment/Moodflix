@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Temel SEO Meta Etiketleri -->
+    <title>MOODFLIX - Ruh Halinize Göre Film Önerileri</title>
+    <meta name="description" content="Ruh halinize göre film önerileri sunan, ücretsiz film öneri platformu. Komedi, dram, aksiyon, romantik ve daha fazla kategoride filmler keşfedin.">
+    <meta name="keywords" content="film önerileri, film tavsiyesi, ruh haline göre film, film seçimi, film bul, film keşfet, film izle, film ara">
+    <meta name="author" content="MOODFLIX">
+    
+    <!-- Open Graph Meta Etiketleri (Sosyal Medya) -->
+    <meta property="og:title" content="MOODFLIX - Ruh Halinize Göre Film Önerileri">
+    <meta property="og:description" content="Nasıl hissediyorsun? Ruh haline en uygun filmleri keşfet!">
+    <meta property="og:image" content="https://your-domain.com/path/to/moodflix-logo.png">
+    <meta property="og:url" content="https://your-domain.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Etiketleri -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MOODFLIX - Ruh Halinize Göre Film Önerileri">
+    <meta name="twitter:description" content="Nasıl hissediyorsun? Ruh haline en uygun filmleri keşfet!">
+    <meta name="twitter:image" content="https://your-domain.com/path/to/moodflix-logo.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://your-domain.com">
+    
+    <!-- Ek Meta Etiketleri -->
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta name="theme-color" content="#e50914">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <!-- Yapısal Veri İşaretlemesi -->
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "WebApplication",
+        "name": "MOODFLIX",
+        "description": "Ruh halinize göre film önerileri sunan, ücretsiz film öneri platformu.",
+        "url": "https://your-domain.com",
+        "applicationCategory": "Entertainment",
+        "genre": "Movie Recommendations",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        }
+    }
+    </script>
+
+    <!-- AdSense Kodu -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2713493133790758" crossorigin="anonymous"></script>
+
+    <!-- Mevcut CSS ve diğer kaynaklar -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Üst Reklam Alanı -->
+        <div class="ad-container top-ad">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-2713493133790758"
+                 data-ad-slot="8008672947"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+        </div>
+
+        <h1 class="main-title">MOODFLIX</h1>
+        <h2 class="subtitle">Nasıl Hissediyorsun?</h2>
+        <div class="mood-buttons">
+            <button onclick="getMoviesByMood('happy')">😊 Neşeli</button>
+            <button onclick="getMoviesByMood('sad')">😢 Hüzünlü</button>
+            <button onclick="getMoviesByMood('excited')">🤩 Heyecanlı</button>
+            <button onclick="getMoviesByMood('romantic')">❤️ Romantik</button>
+            <button onclick="getMoviesByMood('angry')">😠 Öfkeli</button>
+            <button onclick="getMoviesByMood('scared')">😱 Gerilimli</button>
+            <button onclick="getMoviesByMood('adventurous')">🌟 Maceraperest</button>
+            <button onclick="getMoviesByMood('mysterious')">🔍 Gizemli</button>
+            <button onclick="getMoviesByMood('thoughtful')">🤔 Düşünceli</button>
+            <button onclick="getMoviesByMood('family')">👨‍👩‍👧‍👦 Aileyle</button>
+        </div>
+        <div id="loading" class="loading-container hidden">
+            <div class="netflix-loader">
+                <div class="loader-beam"></div>
+            </div>
+            <p class="loading-text">Filmler Yükleniyor...</p>
+        </div>
+        <div id="movies-container"></div>
+
+        <!-- Alt Reklam Alanı -->
+        <div class="ad-container bottom-ad">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-2713493133790758"
+                 data-ad-slot="8008672947"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+        </div>
+    </div>
+
+    <!-- Yan Reklam Alanı -->
+    <div class="ad-container sidebar-ad">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-2713493133790758"
+             data-ad-slot="8008672947"
+             data-ad-format="vertical"></ins>
+    </div>
+
+    <!-- YouTube API -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="script.js"></script>
+</body>
+</html>
